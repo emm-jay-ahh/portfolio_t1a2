@@ -1,0 +1,158 @@
+/*  FONT FAMILY in use
+font-family: 'Prompt', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+
+@import url(./fonts.css);
+
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    /* font-family themes */
+    --Roboto: "Roboto", sans-serif;
+    --Prompt: "Prompt", sans-serif;
+    --Code: "Source Code Pro", monospace;
+
+    /* theme colours */
+    --text-white: #ede7e3;
+    --text-mid-blue: #82c0cc;
+    --bg-flame: #f05d23;
+    --bg-pac-blue: #489fb5;
+    --bg-jet: #373737;
+
+    /* gradient colours */
+    --grad-grey-black: background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    --grad-dark: background-image: linear-gradient(to right, #434343 0%, black 100%);
+    --grad-blues: background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+
+
+
+/* ---------------Global Class----------------- */
+body {
+    background: var(--bg-pac-blue);
+}
+a {
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+h2 {
+    text-decoration: none;
+    color: var(--bg-flame);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+/* -----xxx-------Global Class--------xxx------ */
+
+/* ---------------Navigation----------------- */
+
+.nav {
+    background: var(--bg-jet);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 7vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--text-white);
+}
+
+.collapse {
+    height: 30rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+    
+
+    
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Prompt);
+}
+
+.nav .nav-items .nav-link:hover {
+    background-color: var(--bg-flame);
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: var(--grad-dark);
+}
+.nav .nav-brand a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Code);
+    color: var(--text-white);
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+}
+
+.nav .social i {
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover {
+    color: var(--bg-flame);
+}
+/* -----xxx-------Navigation--------xxx------ */
+
+/* ---------------Main Page ----------------- */
+
+
+/* -----xxx-------Main Page--------xxx------ */
+
+/* ---viewport less than or equal to 700px --- */
+
+@media only screen and (max-width: 700px) {
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column; 
+    }
+
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+/* ---viewport less than or equal to 600px --- */
