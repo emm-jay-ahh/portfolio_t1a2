@@ -24,6 +24,7 @@ body {
     --bg-flame: #f05d23;
     --bg-pac-blue: #489fb5;
     --bg-jet: #373737;
+    --bg-dark: #131313;
 
     /* gradient colours */
     --grad-grey-black: background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
@@ -35,16 +36,27 @@ body {
 
 /* ---------------Global Class----------------- */
 body {
-    background: var(--bg-pac-blue);
+    background: var(--bg-dark);
 }
+
 a {
     text-decoration: none;
     color: var(--text-white);
 }
 
-h2 {
+h1 {
+    font-family: var(--Code);
+    font-size: 2.2rem;
+}
+
+/* h2 {
     text-decoration: none;
     color: var(--bg-flame);
+} */
+
+h3 {
+    font-family: var(--Prompt);
+    font-size: 1.3rem;
 }
 
 .flex-row {
@@ -56,6 +68,18 @@ h2 {
 ul {
     list-style-type: none;
 }
+
+button.button {
+    border:var(--text-white) 1px;
+    border-style: solid;
+    border-radius: 2rem;
+    padding: 1rem, 3rem;
+    font-size: 1rem;
+    font-family: var(--Code);
+    cursor: pointer;
+}
+
+
 /* -----xxx-------Global Class--------xxx------ */
 
 /* ---------------Navigation----------------- */
@@ -98,9 +122,7 @@ ul {
 .nav .nav-items {
     display: flex;
     margin: 0;
-    
 
-    
 }
 
 .nav .nav-items .nav-link {
@@ -118,7 +140,7 @@ ul {
     color: var(--grad-dark);
 }
 .nav .nav-brand a {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     padding: 1rem 0;
     display: block;
     font-family: var(--Code);
@@ -131,6 +153,7 @@ ul {
 
 .nav .social i {
     padding: 0 .2rem;
+    font-size: 1.1rem;
 }
 
 .nav .social i:hover {
@@ -138,10 +161,46 @@ ul {
 }
 /* -----xxx-------Navigation--------xxx------ */
 
-/* ---------------Main Page ----------------- */
+
+/* ---------------Main index.html----------------- */
+
+main .site-title {
+    background: url(../images/cyber.jpeg);
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--text-white)
+}
+
+main .site-title h1, h3 {
+    margin: .3rem;
+}
+
+main .site-title .button {
+    margin: 1.8rem;
+    background: var(--bg-pac-blue)
+}
+
+main .site-title .button:hover {
+    background: transparent;
+    border: 1px solid var(--text-mid-blue);
+    color: var(--text-white);
+}
 
 
-/* -----xxx-------Main Page--------xxx------ */
+/* -----xxx-------Main index.html--------xxx------ */
+
+
+
+
+
+
 
 /* ---viewport less than or equal to 700px --- */
 
