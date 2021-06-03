@@ -44,15 +44,19 @@ a {
     color: var(--text-white);
 }
 
+p {
+    color: var(--text-white);    
+}
+
 h1 {
     font-family: var(--Code);
     font-size: 2.2rem;
 }
 
-/* h2 {
+h2 {
     text-decoration: none;
     color: var(--bg-flame);
-} */
+}
 
 h3 {
     font-family: var(--Prompt);
@@ -74,7 +78,7 @@ button.button {
     border-style: solid;
     border-radius: 2rem;
     padding: 1rem, 3rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-family: var(--Code);
     cursor: pointer;
 }
@@ -122,7 +126,6 @@ button.button {
 .nav .nav-items {
     display: flex;
     margin: 0;
-
 }
 
 .nav .nav-items .nav-link {
@@ -164,7 +167,7 @@ button.button {
 
 /* ---------------Main index.html----------------- */
 
-main .site-title {
+main.index-html .site-title {
     background: url(../images/cyber.jpeg);
     background-size: cover;
     height: 70vh;
@@ -172,22 +175,22 @@ main .site-title {
     justify-content: center;
 }
 
-main .site-title .site-background {
+main.index-html .site-title .site-background {
     padding-top: 10rem;
     text-align: center;
     color: var(--text-white)
 }
 
-main .site-title h1, h3 {
+main.index-html .site-title h1, h3 {
     margin: .3rem;
 }
 
-main .site-title .button {
+main.index-html .site-title .button {
     margin: 1.8rem;
     background: var(--bg-pac-blue)
 }
 
-main .site-title .button:hover {
+main.index-html .site-title .button:hover {
     background: transparent;
     border: 1px solid var(--text-mid-blue);
     color: var(--text-white);
@@ -197,6 +200,36 @@ main .site-title .button:hover {
 /* -----xxx-------Main index.html--------xxx------ */
 
 
+/* ---------------Main blog.html----------------- */
+
+main.blog-html .blog {
+    background: url(../images/red-smoke-cyber.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 70vh;
+    width: 100%;
+}
+
+main.blog-html .blog .blog-post {
+    padding-top: 6rem;
+}
+
+main.blog-html .blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0,0, 0, 0.25);
+}
+
+main.blog-html .blog-content.blog-title {
+    padding: 2rem 0;
+}
+
+
+
+/* -----xxx-------Main blog.html--------xxx------ */
 
 
 
@@ -215,3 +248,37 @@ main .site-title .button:hover {
 }
 
 /* ---viewport less than or equal to 600px --- */
+
+
+/* ---- Scroll Bar ---- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-jet);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:var(--bg-flame);
+  }
+  
+/* Scroll button  */
+  ::-webkit-scrollbar-button {
+    background: var(--bg-pac-blue);
+  }
+
+  /* Scroll button  hover*/
+::-webkit-scrollbar-button:hover {
+    background: var(--text-mid-blue)
+  }
+  /* -xx- Scroll Bar -xx- */

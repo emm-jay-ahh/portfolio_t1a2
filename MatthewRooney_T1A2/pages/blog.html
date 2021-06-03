@@ -20,50 +20,71 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="../css/all.css">
-
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 </head>
 
 <body>
-    <header>
-        <!-- Navigation -->
-        <nav class="nav">
-            <div class="nav-menu flex-row">
-                <div class="nav-brand">
-                    <a href="../index.html" class="text-whitesmoke">&lt;cyber_emmjay&gt;</a>
-                </div>
-                <!-- <div class="nav-sub">
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="../index.html" class="text-whitesmoke">&lt;cyber_emmjay&gt;</a>
+            </div>
+            <!-- <div class="nav-sub">
                     <h2>Cyber - Code - Cloud</h2>
                 </div> -->
-                <div>
-                    <div class="toggle-collapse">
-                        <div class="toggle-icons">
-                            <div class="fas fa-bars"></div>
+            <div>
+                <div class="toggle-collapse">
+                    <div class="toggle-icons">
+                        <div class="fas fa-bars"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link"><a href="../index.html">Home</a></li>
+                    <li class="nav-link"><a href="./bio.html">Bio</a></li>
+                    <li class="nav-link"><a href="./blog.html">Blog</a></li>
+                    <li class="nav-link"><a href="./secret.html">Secret</a></li>
+                </ul>
+            </div>
+            <div class="social text-white">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github-square"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- /Navigation -->
+
+    <!-- Main section blog.html -->
+    <main class=blog-html>
+        <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content">
+                            <img src="../images/cyber-neon-mask.jpeg" alt="post-one">
+                            <div class="blog-title">
+                                <h3>week_01</h3>
+                                <button class="button button-blog"></button>
+                                <span>2 mins</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <ul class="nav-items">
-                        <li class="nav-link"><a href="../index.html">Home</a></li>
-                        <li class="nav-link"><a href="./bio.html">Bio</a></li>
-                        <li class="nav-link"><a href="./blog.html">Blog</a></li>
-                        <li class="nav-link"><a href="./secret.html">Secret</a></li>
-                    </ul>
-                </div>
-                <div class="social text-white">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github-square"></i></a>
-                    <a href="#"><i class="fab fa-youtube-square"></i></i></a>
-                </div>
             </div>
-        </nav>
-        <!-- /Navigation -->
+        </section>
+    </main>
 
+    <!-- Main section blog.html -->
 
-
-
-        <!-- Jquery Library and JS scripts -->
-        <script src="./js/jquery-v3.6.0.js"></script>
-        <script src="./js/main.js"></script>
+    <!-- Jquery Library and JS scripts + bio page owl-carousel-->
+    <script src="../js/jquery-v3.6.0.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

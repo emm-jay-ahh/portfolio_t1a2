@@ -10,4 +10,7 @@ $(document).ready(function(){
     })
 
 
+    // owl-carousel for blog page
+    $('.owl-carousel').owlCarousel();
+
 })
