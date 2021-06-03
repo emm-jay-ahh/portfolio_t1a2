@@ -83,6 +83,13 @@ button.button {
     cursor: pointer;
 }
 
+span {
+    font-family: var(--Roboto);
+}
+
+.container {
+    margin: 0 5vw;
+}
 
 /* -----xxx-------Global Class--------xxx------ */
 
@@ -206,12 +213,13 @@ main.blog-html .blog {
     background: url(../images/red-smoke-cyber.jpeg);
     background-repeat: no-repeat;
     background-position: right;
-    height: 70vh;
+    height: 90vh;
     width: 100%;
+    background-size: 100%;
 }
 
 main.blog-html .blog .blog-post {
-    padding-top: 6rem;
+    padding-top: 11rem;
 }
 
 main.blog-html .blog-post .blog-content {
@@ -220,11 +228,42 @@ main.blog-html .blog-post .blog-content {
     text-align: center;
     width: 60%;
     margin: 3rem 2rem;
-    box-shadow: 0 15px 20px rgba(0,0, 0, 0.25);
+    box-shadow: 0 15px 20px rgba(0,0, 0, 0.5);
+    border: solid 1px var(--bg-flame);
+    background: rgba(255,255, 255, 0.4)
 }
 
-main.blog-html .blog-content.blog-title {
+main.blog-html .blog-content .blog-title {
     padding: 2rem 0;
+}
+
+main.blog-html .blog-content .button-blog {
+    padding: .7rem 2rem;
+    background: var(--bg-pac-blue);
+    margin: .5rem;
+}
+
+main.blog-html .blog-content span {
+    display: block;
+}
+
+main.blog-html section .container .owl-nav {
+    position: absolute;
+    top: 20%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main.blog-html .owl-nav .owl-prev .owl-nav-prev,
+main.blog-html .owl-nav .owl-next .owl-nav-next {
+    color: var(--bg-pac-blue);
+    background: rgba(255,255, 255, 0.2);
+    font-size: 1.5rem;
+}
+
+main.blog-html .owl-theme .owl-nav [class*='owl-']:hover {
+    background: rgba(255,255, 255, 0.5);
+    color: var(--bg-jet);
 }
 
 
