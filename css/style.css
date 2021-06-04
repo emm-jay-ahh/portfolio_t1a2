@@ -55,7 +55,6 @@ h1 {
 
 h2 {
     text-decoration: none;
-    color: var(--bg-flame);
 }
 
 h3 {
@@ -90,6 +89,10 @@ span {
 .container {
     margin: 0 5vw;
 }
+
+
+.text-white
+
 
 /* -----xxx-------Global Class--------xxx------ */
 
@@ -151,25 +154,25 @@ span {
 }
 .nav .nav-brand a {
     font-size: 1.9rem;
-    padding: 1rem 0;
+    padding: 1.3rem 2rem;
     display: block;
     font-family: var(--Code);
     color: var(--text-white);
 }
 
 .nav .social {
-    padding: 1.4rem 0;
+    padding: 1.7rem 2rem;
 }
 
 .nav .social i {
-    padding: 0 .2rem;
+    padding: 0 .4rem;
     font-size: 1.1rem;
 }
 
 .nav .social i:hover {
     color: var(--bg-flame);
 }
-/* -----xxx-------Navigation--------xxx------ */
+/* -----XXX-------Navigation--------XXX------ */
 
 
 /* ---------------Main index.html----------------- */
@@ -204,13 +207,16 @@ main.index-html .site-title .button:hover {
 }
 
 
-/* -----xxx-------Main index.html--------xxx------ */
+/* -----XXX-------Main index.html--------XXX------ */
 
 
 /* ---------------Main blog.html----------------- */
 
+
+    /* xxx Carousel/Gallery xxx */
+   
 main.blog-html .blog {
-    background: url(../images/red-smoke-cyber.jpeg);
+    background: url(../images/tie.jpeg);
     background-repeat: no-repeat;
     background-position: right;
     height: 90vh;
@@ -230,7 +236,7 @@ main.blog-html .blog-post .blog-content {
     margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0,0, 0, 0.5);
     border: solid 1px var(--bg-flame);
-    background: rgba(255,255, 255, 0.4)
+    background: rgba(255,255, 255, 0.4);
 }
 
 main.blog-html .blog-content .blog-title {
@@ -246,10 +252,13 @@ main.blog-html .blog-content .button-blog {
 main.blog-html .blog-content span {
     display: block;
 }
+    /* xxx Carousel/Gallery xxx */
+
+    /* --- Carousel Nav left right toggle--- */
 
 main.blog-html section .container .owl-nav {
     position: absolute;
-    top: 20%;
+    top: 10%;
     margin: 0 auto;
     width: 100%;
 }
@@ -257,18 +266,33 @@ main.blog-html section .container .owl-nav {
 main.blog-html .owl-nav .owl-prev .owl-nav-prev,
 main.blog-html .owl-nav .owl-next .owl-nav-next {
     color: var(--bg-pac-blue);
-    background: rgba(255,255, 255, 0.2);
-    font-size: 1.5rem;
+    background: transparent;
+    font-size: 3rem;
 }
+
 
 main.blog-html .owl-theme .owl-nav [class*='owl-']:hover {
-    background: rgba(255,255, 255, 0.5);
-    color: var(--bg-jet);
+    background: transparent;
+    color: var(--bg-flame);
+}
+
+main.blog-html .owl-theme .owl-nav [class*='owl-'] {
+    outline: none;
+}
+
+/* xxx Carousel Nav left/right toggle xxx */
+
+/* --- Main site-content for Blogs --- */
+
+main.blog-html .site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
 
 
+/* xxx Content for Blogs xxx */
 
-/* -----xxx-------Main blog.html--------xxx------ */
+/* -----XXX-------Main blog.html--------XXX------ */
 
 
 
@@ -318,6 +342,6 @@ main.blog-html .owl-theme .owl-nav [class*='owl-']:hover {
 
   /* Scroll button  hover*/
 ::-webkit-scrollbar-button:hover {
-    background: var(--text-mid-blue)
+    background: var(--text-mid-blue);
   }
   /* -xx- Scroll Bar -xx- */
