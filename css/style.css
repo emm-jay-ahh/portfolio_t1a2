@@ -208,51 +208,9 @@ main.index-html .site-title .button:hover {
 
 /* -----XXX-------Main index.html--------XXX------ */
 
-/* ---------------Main blog.html----------------- */
+/* ---------------Main bio.html----------------- */
 
-/* xxx Carousel/Gallery xxx */
-
-/* ----- below is not used in blog now --------------------------*/
-
-/* main.blog-html .blog {
-    background: url(../images/tie.jpeg);
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 90vh;
-    width: 100%;
-    background-size: 100%;
-}
-
-main.blog-html .blog .blog-post {
-    padding-top: 11rem;
-}
-
-main.blog-html .blog-post .blog-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 60%;
-    margin: 3rem 2rem;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
-    border: solid 1px var(--bg-flame);
-    background: rgba(255, 255, 255, 0.4);
-}
-
-main.blog-html .blog-content .blog-title {
-    padding: 2rem 0;
-}
-
-main.blog-html .blog-content .button-blog {
-    padding: 0.7rem 2rem;
-    background: var(--grad-blues);
-    margin: 0.5rem;
-}
-
-main.blog-html .blog-content span {
-    display: block;
-} */
-
-/* ----- above is not used in blog now --------------------------*/
+/* --- Carousel/Gallery --- */
 
 main.bio-html .bio {
     background: url(../images/tie.jpeg);
@@ -292,36 +250,34 @@ main.bio-html .bio-content span {
     display: block;
 }
 
-/* xxx Carousel/Gallery xxx */
-
 /* --- Carousel Nav left right toggle--- */
 
-main.blog-html section .container .owl-nav {
+main.bio-html section .container .owl-nav {
     position: absolute;
     top: 10%;
     margin: 0 auto;
     width: 100%;
 }
 
-main.blog-html .owl-nav .owl-prev .owl-nav-prev,
-main.blog-html .owl-nav .owl-next .owl-nav-next {
+main.bio-html .owl-nav .owl-prev .owl-nav-prev,
+main.bio-html .owl-nav .owl-next .owl-nav-next {
     color: var(--bg-pac-blue);
     background: transparent;
     font-size: 3rem;
 }
 
-main.blog-html .owl-theme .owl-nav [class*="owl-"]:hover {
+main.bio-html .owl-theme .owl-nav [class*="owl-"]:hover {
     background: transparent;
     color: var(--bg-flame);
 }
 
-main.blog-html .owl-theme .owl-nav [class*="owl-"] {
+main.bio-html .owl-theme .owl-nav [class*="owl-"] {
     outline: none;
 }
 
-/* xxx Carousel Nav left/right toggle xxx */
+/* -----XXX-------Main bio.html--------XXX------ */
 
-/* --- Main site-content for Blogs --- */
+/* ---------------Main blog.html----------------- */
 
 main.blog-html .site-content {
     display: grid;
@@ -394,7 +350,7 @@ main.blog-html .post-content .post-title a:hover {
 }
 
 .blog-html .site-content .page-num a {
-    padding: 0.6rem 0.9rem;
+    padding: 0.6rem 1.9rem;
     border-radius: 2rem;
     margin: 0 0.3rem;
 }
@@ -448,7 +404,7 @@ main.blog-html .post-content .post-title a:hover {
     color: var(--text-mid-blue);
 }
 
-/*  Popular List */
+/* Popular List */
 .blog-html .sidebar .popular-post .post-content {
     padding: 1rem 0;
 }
@@ -458,7 +414,19 @@ main.blog-html .post-content .post-title a:hover {
 }
 
 .site-content .sidebar .popular-post .post-info {
-    padding: 0.4rem 0.1rem;
+    padding: 0.4rem 0.1rem !important;
+    bottom: 0rem !important;
+    left: 1rem !important;
+    border-radius: 0rem !important;
+    background: var(--grad-blues) !important;
+}
+
+.site-content .sidebar .popular-post .post-info span {
+    font-size: 0.8rem;
+}
+
+.site-content .sidebar .popular-post .post-title a {
+    font-size: 1.2rem;
 }
 
 /* xxx Sidebar Term & Popular Section  xxx */
