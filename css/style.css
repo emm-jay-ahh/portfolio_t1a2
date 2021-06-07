@@ -46,20 +46,23 @@ a {
 p {
     color: var(--text-white);
     font-family: var(--Prompt);
+    font-size: 1.05rem;
 }
 
 h1 {
     font-family: var(--Code);
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    color: var(--text-white);
 }
 
 h2 {
     text-decoration: none;
+    font-size: 1.7rem;
 }
 
 h3 {
     font-family: var(--Prompt);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .flex-row {
@@ -97,7 +100,6 @@ span {
 /* -----xxx-------Global Class--------xxx------ */
 
 /* ---------------Navigation----------------- */
-
 .nav {
     background: var(--bg-jet);
     padding: 0 2rem;
@@ -146,10 +148,11 @@ span {
 }
 
 .nav .nav-items .nav-link {
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
+    padding: 1.5rem 1rem;
+    font-size: 1.3rem;
     position: relative;
-    font-family: var(--Prompt);
+    font-family: var(--Code);
+    border-radius: 7%;
 }
 
 .nav .nav-items .nav-link:hover {
@@ -161,7 +164,7 @@ span {
 }
 .nav .nav-brand a {
     font-size: 1.9rem;
-    padding: 1.3rem 2rem;
+    padding: 1.3rem 1.7rem;
     display: block;
     font-family: var(--Code);
     color: var(--text-white);
@@ -173,7 +176,7 @@ span {
 
 .nav .social i {
     padding: 0 0.7rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .nav .social i:hover {
@@ -268,13 +271,22 @@ main.bio-html .bio-post .bio-content {
 }
 
 main.bio-html .bio-content .bio-title {
-    padding: 2rem 0;
+    padding: 2.7rem 0;
+    color: var(--text-white);
+    font-size: 1.2rem;
 }
 
 main.bio-html .bio-content .button-bio {
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 1.7rem;
     background: var(--grad-blues);
     margin: 0.5rem;
+    cursor: pointer;
+}
+
+main.bio-html .bio-content .button-bio:hover {
+    background: var(--bg-flame);
+    border: var(--bg-dark) solid 1px;
+    color: var(--text-white);
 }
 
 main.bio-html .bio-content span {
