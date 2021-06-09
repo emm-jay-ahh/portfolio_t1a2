@@ -215,6 +215,7 @@ h3 {
     margin: 0.3rem;
 }
 
+/* ccc about buttons */
 main.index-html .site-title .button {
     margin: 1.8rem;
     padding: 1rem 1.5rem;
@@ -259,7 +260,7 @@ main.index-html .site-content .cloud-section {
 main.index-html .site-content .cyber-section {
     background: url(../images/key_80.jpg);
 }
-
+/*  Fonts for page */
 main.index-html .site-content h2 {
     font-family: var(--Roboto);
     color: var(--text-white);
@@ -379,6 +380,7 @@ main.blog-html .site-content .post-content > .post-image .post-info {
     bottom: 0%;
     left: 20vw;
     border-radius: 3rem;
+    margin: 0 0.7rem;
 }
 
 main.blog-html .site-content .post-content > .post-image > div {
@@ -392,10 +394,6 @@ main.blog-html .site-content .post-content > .post-image .img {
 
 main.blog-html .site-content .post-content > .post-image .img:hover {
     transform: scale(1.2);
-}
-
-main.blog-html .site-content .post-content > .post-image .post-info {
-    margin: 0 0.7rem;
 }
 
 main.blog-html .post-content .post-title a {
@@ -488,6 +486,7 @@ main.blog-html .post-content .post-title a:hover {
 
 .blog-html .site-content .sidebar .popular-post h2 {
     padding-top: 6rem;
+    font-family: var(--Prompt);
 }
 
 .blog-html .site-content .sidebar .popular-post .post-info {
@@ -683,6 +682,11 @@ footer.footer .nav-up span:hover {
         display: initial;
     }
 
+    main.index-html .site-title div {
+        display: flex;
+        flex-direction: column;
+    }
+
     main.index-html .site-title .button {
         margin: 1.5rem;
         padding: 0.8rem 1.2rem;
@@ -727,11 +731,6 @@ footer.footer .nav-up span:hover {
 
 /* ---viewport less than or equal to 450px --- */
 @media only screen and (max-width: 450px) {
-    main.index-html .site-title div {
-        display: flex;
-        flex-direction: column;
-    }
-
     main.index-html .site-content h2 {
         font-size: 1.2rem;
     }
@@ -741,6 +740,11 @@ footer.footer .nav-up span:hover {
 
     main .bio {
         height: 100vh;
+    }
+
+    main.blog-html .site-content .post-content > .post-image .post-info {
+        padding: 0.5rem;
+        margin: 0 0.5rem;
     }
 
     footer.footer .copyright {
