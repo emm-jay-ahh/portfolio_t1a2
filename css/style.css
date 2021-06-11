@@ -677,7 +677,8 @@ footer.footer .nav-up span:hover {
     .nav .nav-items {
         flex-direction: column;
     }
-    g .nav .toggle-collapse {
+
+    .nav .toggle-collapse {
         display: initial;
     }
 
@@ -718,12 +719,6 @@ footer.footer .nav-up span:hover {
 
     footer.footer .copyright {
         font-size: 0.8rem;
-    }
-    .nav .nav-brand a {
-        font-size: 1.7rem;
-    }
-    .nav {
-        min-height: 9vh;
     }
 }
 
