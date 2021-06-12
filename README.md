@@ -167,24 +167,44 @@ Utlising four main pages with Shared Nav and Footer
 <br />
 
     5. NAVFOOT (SHARED ACROSS ALL PAGES)
-        - NAV:
-            * Nav the four main pages
+        * NAV:
+            * Navigate the four main pages
+                * home
+                * bios
+                * blog
+                * .sec
             * Quick Socials links
-            * Responsive Nav
+                * Github
+                * LinkedIn
+                * Youtube   (Not using my channel yet)
+            * Responsive
             * Collapsable Nav Menu (below 800px)
                 * JS used
                 * Burger Button appears
 
-        - FOOTER:
-            * Responsive Nav
+        * FOOTER:
+            * Addtional Info
+                * Mission
+                * Quick Search
+                    * Reddit
+                    * DuckDuckGo
+                * Resources
+                    * Not in use yet
+                * Follow Me Socials
+                    * Github
+                    * LinkedIn
+                    * Youtube   (Not using my channel yet)
+            * Responsive
             * Grid template column 25% each
                 * Desktop 4 x 1 layout
                 * Tablet  2 x Layout
                 * Phone   1 x 4
 
-Nav Bar collapse - screen response - Footer collapses from 4 to 2 to 1 columns - Contents: our mission, search reddit or duckduckgo, other resources and follow me + nav back to top button - Unique Header "quote" per page - Contains general informationa bout Code, Cloud and Cyber - Responsive for different screen size
+<br />
 
 #### Sitemap
+
+(https://)
 
 #### Screenshots
 
